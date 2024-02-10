@@ -1,0 +1,87 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+input {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+input:focus {
+  background-color: grey;
+  color: red;
+}
+
+.App {
+  height: 500px;
+  border: 1px solid white;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  margin-top: 15px;
+}
+button:focus {
+  -webkit-box-shadow: 0px 0px 43px 10px rgba(0, 95, 247, 0.2);
+  -moz-box-shadow: 0px 0px 43px 10px rgba(0, 95, 247, 0.2);
+  box-shadow: 0px 0px 43px 10px rgba(0, 95, 247, 0.2);
+  color: red;
+}
+.custom {
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+.btn {
+  background: rgb(22, 9, 240);
+  background: linear-gradient(
+    0deg,
+    rgba(22, 9, 240, 1) 0%,
+    rgba(49, 110, 244, 1) 100%
+  );
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.btn:after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+}
+.btn:hover {
+  color: #fff;
+  border: none;
+  background: transparent;
+}
+.btn:hover:after {
+  background: rgb(0, 3, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 126, 251, 1) 0%,
+    rgba(0, 3, 255, 1) 100%
+  );
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
